@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:external_display/display_manager.dart';
-import 'package:external_display/display.dart';
-import 'package:external_display/secondary_display.dart';
+import 'package:external_screen/display_manager.dart';
+import 'package:external_screen/display.dart';
+import 'package:external_screen/secondary_display.dart';
 
 void main() {
   runApp(const MyApp());

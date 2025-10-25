@@ -1,6 +1,6 @@
-name: external_display_example
-description: Example app for external_display package
-publish_to: "none"
+name: external_screen_example
+description: Example app for external_screen package
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  external_display:
+  external_screen:
     path: ../
 
 dev_dependencies:

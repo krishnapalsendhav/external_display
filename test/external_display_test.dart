@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:external_display/external_display.dart';
+import 'package:external_screen/external_display.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
