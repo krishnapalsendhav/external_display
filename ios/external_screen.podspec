@@ -1,17 +1,17 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint external_display.podspec` to validate before publishing.
+# Run `pod lib lint external_screen.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'external_display'
+  s.name             = 'external_screen'
   s.version          = '0.0.1'
-  s.summary          = 'A new Flutter package project.'
+  s.summary          = 'Flutter plugin for managing external displays and screens.'
   s.description      = <<-DESC
-A new Flutter package project.
+A Flutter plugin that enables developers to detect, manage, and display content on external displays/screens connected via HDMI, wireless display, or other connections on iOS and Android platforms.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/krishnapalsendhav/external_display'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Krishna Pal Sendhav' => 'krishnapalsendhav@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
