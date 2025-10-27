@@ -1,3 +1,8 @@
+## 0.0.3
+
+* Fix: Updated Swift bridging header imports in ExternalDisplayPlugin.m to use `external_screen-Swift.h` instead of `external_display-Swift.h`
+* This resolves the "file not found" build error on iOS
+
 ## 0.0.2
 
 * Fix: Renamed iOS podspec file from `external_display.podspec` to `external_screen.podspec` to match package name
