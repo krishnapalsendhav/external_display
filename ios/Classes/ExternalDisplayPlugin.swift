@@ -1,7 +1,7 @@
 import Flutter
 import UIKit
 
-public class ExternalDisplayPlugin: NSObject, FlutterPlugin {
+public class SwiftExternalDisplayPlugin: NSObject, FlutterPlugin {
     var additionalWindows = [UIScreen:UIWindow]()
     var screens = [UIScreen]()
     var flutterEngineChannel:FlutterMethodChannel?=nil
@@ -57,7 +57,7 @@ public class ExternalDisplayPlugin: NSObject, FlutterPlugin {
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "presentation_displays_plugin", binaryMessenger: registrar.messenger())
-        let instance = ExternalDisplayPlugin()
+        let instance = SwiftExternalDisplayPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
         
         let eventChannel = FlutterEventChannel(name: "presentation_displays_plugin_events", binaryMessenger: registrar.messenger())
@@ -138,7 +138,7 @@ public class ExternalDisplayPlugin: NSObject, FlutterPlugin {
                 window!.isHidden=false
                 if (window!.rootViewController == nil || !(window!.rootViewController is FlutterViewController)){
                     let extVC = FlutterViewController(project: nil, initialRoute: routerName, nibName: nil, bundle: nil)
-                    ExternalDisplayPlugin.controllerAdded!(extVC)
+                    SwiftExternalDisplayPlugin.controllerAdded!(extVC)
                     window?.rootViewController = extVC
 
                     self.flutterEngineChannel = FlutterMethodChannel(name: "presentation_displays_plugin_engine", binaryMessenger: extVC.binaryMessenger)

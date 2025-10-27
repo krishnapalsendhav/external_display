@@ -1,3 +1,9 @@
+## 0.0.5
+
+* Fix: Renamed Swift class from `ExternalDisplayPlugin` to `SwiftExternalDisplayPlugin` to avoid module conflicts
+* Fix: Objective-C wrapper now correctly bridges to Swift implementation without recursive calls
+* This resolves the "has different definitions in different modules" build error on iOS
+
 ## 0.0.4
 
 * Fix: Removed duplicate Objective-C wrapper files (ExternalDisplayPlugin.h and ExternalDisplayPlugin.m)
