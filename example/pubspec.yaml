@@ -1,6 +1,6 @@
 name: external_screen_example
 description: Example app for external_screen package
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
