@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'external_screen'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'Flutter plugin for managing external displays and screens.'
   s.description      = <<-DESC
 A Flutter plugin that enables developers to detect, manage, and display content on external displays/screens connected via HDMI, wireless display, or other connections on iOS and Android platforms.

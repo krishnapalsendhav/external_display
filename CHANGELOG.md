@@ -1,3 +1,9 @@
+## 0.0.4
+
+* Fix: Removed duplicate Objective-C wrapper files (ExternalDisplayPlugin.h and ExternalDisplayPlugin.m)
+* This resolves the "Duplicate interface definition for class 'ExternalDisplayPlugin'" build error on iOS
+* The Swift implementation handles plugin registration directly
+
 ## 0.0.3
 
 * Fix: Updated Swift bridging header imports in ExternalDisplayPlugin.m to use `external_screen-Swift.h` instead of `external_display-Swift.h`
